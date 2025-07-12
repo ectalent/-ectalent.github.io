@@ -4,70 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EastCode Talent</title>
-  
-  <!-- 🔍 SEO Meta Tags -->
-  <meta name="description" content="Reliable remote developers from Eastern Europe for fast-growing startups. MVPs, QA, support, and agile teams." />
-  <meta name="keywords" content="remote developers, Eastern Europe, startup developers, MVP, agile team, SaaS support" />
-  <meta name="author" content="EastCode Talent" />
-  
-  <!-- 🌐 Favicon -->
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" type="image/png" />
-
-  <!-- 🎨 Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- 🌓 Dark/Light Mode -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root {
-      --bg-color: #f0f2f5;
-      --text-color: #1a202c;
-      --card-bg: white;
-      --primary-color: #1a73e8;
-      --shadow: rgba(0, 0, 0, 0.1);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-color: #1e1e1e;
-        --text-color: #f0f0f0;
-        --card-bg: #2a2a2a;
-        --primary-color: #4e9cff;
-        --shadow: rgba(0, 0, 0, 0.4);
-      }
-    }
-
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: var(--bg-color);
-      color: var(--text-color);
-      animation: fadeIn 0.8s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+      background: #f7f9fc;
+      color: #1a202c;
     }
 
     header {
-      background: var(--primary-color);
+      background: #1a73e8;
       color: white;
       padding: 2rem;
       text-align: center;
     }
 
+    .hero-image {
+      width: 100%;
+      max-width: 1000px;
+      margin: 2rem auto 0;
+      display: block;
+      border-radius: 12px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 2rem;
-      background: var(--card-bg);
-      border-radius: 10px;
-      box-shadow: 0 4px 12px var(--shadow);
+      padding: 1rem;
     }
 
     h1, h2, h3 {
-      color: var(--text-color);
+      color: #1a202c;
     }
 
     .service-table {
@@ -83,157 +58,66 @@
     }
 
     .cta {
-      background: var(--primary-color);
+      background: #1a73e8;
       color: white;
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
 
     .cta a {
       background: white;
-      color: var(--primary-color);
-      padding: 0.75rem 1.5rem;
+      color: #1a73e8;
+      padding: 0.5rem 1rem;
       text-decoration: none;
       border-radius: 4px;
       margin-top: 1rem;
       display: inline-block;
-      font-weight: bold;
     }
 
     ul {
-      padding-left: 1.2rem;
+      list-style: none;
+      padding-left: 0;
     }
 
-    ul li::before {
-      content: "✔️ ";
-      margin-right: 0.3rem;
+    ul li {
+      margin-bottom: 0.5rem;
     }
 
-    .tip-list li::before {
-      content: "💡 ";
-    }
-
-    form {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input, textarea {
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-
-    button {
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      padding: 0.8rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #155ec4;
+    ul li i {
+      color: #1a73e8;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-  <h1>EastCode Talent</h1>
-  <p>Reliable remote developers from Eastern Europe for ambitious startups</p>
-</header>
+    <h1>EastCode Talent</h1>
+    <p>Reliable remote developers from Eastern Europe for ambitious startups</p>
+  </header>
 
-<img src="images/developer.webp.webp"style="width: 100%; border-radius: 12px; margin-top: 2rem;" />
+  <!-- 🔽 IMAGE YOU UPLOADED -->
+  <img src="developer.webp" alt="Developer working" class="hero-image" />
 
-<section>
-  
-    <h2><i class="fas fa-plug"></i> What We Do</h2>
+  <section>
+    <h2>🔹 What We Do</h2>
     <p>
-      We connect you with vetted developers, testers, and DevOps experts from Poland, Romania, and Ukraine.
-      Scale your team with no hiring risk — clear deliverables, verified talent, and competitive pricing.
+      We connect you with experienced developers, testers, and DevOps professionals from Poland, Romania, and Ukraine.
+      Scale your team risk-free with vetted talent, clear deliverables, and competitive pricing.
     </p>
 
-    <h2><i class="fas fa-rocket"></i> Our Services</h2>
+    <h2>🚀 Our Services</h2>
     <table class="service-table">
       <thead>
         <tr>
           <th>Service</th>
-          <th>Starting at (€/month)</th>
+          <th>From (€/month)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Dedicated Developer (Mid-Level)</td>
-          <td>€4,000</td>
-        </tr>
-        <tr>
-          <td>QA Tester (per sprint)</td>
-          <td>€1,200</td>
-        </tr>
-        <tr>
-          <td>SaaS Technical Support</td>
-          <td>€3,000</td>
-        </tr>
-        <tr>
-          <td>Agile Team (3 people)</td>
-          <td>€12,000 / month</td>
-        </tr>
-      </tbody>
-    </table>
+          <td>Dedic
 
-    <h2><i class="fas fa-tools"></i> Tech Stack</h2>
-    <p>React • Node.js • Flutter • Python • PostgreSQL • Docker • AWS • Selenium • Figma</p>
-
-    <h2><i class="fas fa-globe-europe"></i> Why Eastern Europe?</h2>
-    <ul>
-      <li>Top-tier engineering talent</li>
-      <li>30–50% lower cost than Germany or the UK</li>
-      <li>Work culture alignment with Western Europe</li>
-      <li>Fluent English communication</li>
-    </ul>
-
-    <h2><i class="fas fa-bullseye"></i> Who We Help</h2>
-    <p>We specialize in supporting companies that need to scale quickly without the burden of internal hiring. Ideal if:</p>
-    <ul>
-      <li>You’re a startup that just raised funding (pre-seed to Series A)</li>
-      <li>You’re a CTO building an MVP and don’t want to assemble a full team yet</li>
-      <li>You run a product or marketing agency with no in-house development</li>
-      <li>You run a SaaS company with QA/support backlog or tech debt</li>
-    </ul>
-
-    <h2><i class="fas fa-handshake"></i> Our Experience</h2>
-<p>We’re currently partnering with companies across multiple countries and industries. We act as your strategic tech partner — not just a supplier.</p>
-<ul>
-  <li><strong>Industry:</strong> Information Technology, Software, Marketing</li>
-  <li><strong>Location:</strong> United Kingdom, Germany, Netherlands, Nordics</li>
-  <li><strong>Professionals:</strong> CTOs, Heads of Product, Engineering Managers</li>
-</ul>
-
-    </ul>
-
-    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-    <form action="https://formspree.io/f/mkgbdadn" method="POST">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <div class="cta">
-    <h3><i class="fas fa-phone"></i> Want a free, no-obligation demo?</h3>
-    <p>Book a call:</p>
-    <a href="https://calendly.com/your-name">Calendly</a>
-    <p>Or email us at: yourname@domain.com</p>
-  </div>
-</body>
-</html>
 
 
 
