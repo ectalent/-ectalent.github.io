@@ -1,61 +1,98 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EastCode Talent</title>
+  
+  <!-- 🔍 SEO Meta Tags -->
+  <meta name="description" content="Reliable remote developers from Eastern Europe for fast-growing startups. MVPs, QA, support, and agile teams." />
+  <meta name="keywords" content="remote developers, Eastern Europe, startup developers, MVP, agile team, SaaS support" />
+  <meta name="author" content="EastCode Talent" />
+  
+  <!-- 🌐 Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" type="image/png" />
+
+  <!-- 🎨 Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- 🌓 Dark/Light Mode -->
   <style>
+    :root {
+      --bg-color: #f0f2f5;
+      --text-color: #1a202c;
+      --card-bg: white;
+      --primary-color: #1a73e8;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #1e1e1e;
+        --text-color: #f0f0f0;
+        --card-bg: #2a2a2a;
+        --primary-color: #4e9cff;
+        --shadow: rgba(0, 0, 0, 0.4);
+      }
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f0f2f5;
-      color: #1a202c;
-      animation: fadeIn 1s ease-in;
+      background: var(--bg-color);
+      color: var(--text-color);
+      animation: fadeIn 0.8s ease-in;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     header {
-      background: #1a73e8;
+      background: var(--primary-color);
       color: white;
       padding: 2rem;
       text-align: center;
     }
+
     section {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background: white;
+      background: var(--card-bg);
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px var(--shadow);
     }
+
     h1, h2, h3 {
-      color: #1a202c;
-      margin-top: 1.5rem;
+      color: var(--text-color);
     }
+
     .service-table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
     }
+
     .service-table th, .service-table td {
       border: 1px solid #ddd;
       padding: 1rem;
       text-align: left;
     }
+
     .cta {
-      background: #1a73e8;
+      background: var(--primary-color);
       color: white;
       padding: 2rem;
       text-align: center;
       margin-top: 3rem;
     }
+
     .cta a {
       background: white;
-      color: #1a73e8;
+      color: var(--primary-color);
       padding: 0.75rem 1.5rem;
       text-decoration: none;
       border-radius: 4px;
@@ -63,99 +100,138 @@
       display: inline-block;
       font-weight: bold;
     }
+
     ul {
       padding-left: 1.2rem;
     }
+
     ul li::before {
       content: "✔️ ";
       margin-right: 0.3rem;
     }
+
     .tip-list li::before {
       content: "💡 ";
+    }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #155ec4;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>EastCode Talent</h1>
-    <p>Desarrolladores remotos confiables desde Europa del Este para startups ambiciosas</p>
+    <p>Reliable remote developers from Eastern Europe for ambitious startups</p>
   </header>
 
   <section>
-    <h2>🔹 Lo que hacemos</h2>
+    <h2><i class="fas fa-plug"></i> What We Do</h2>
     <p>
-      Te conectamos con desarrolladores, testers y DevOps expertos desde Polonia, Rumanía y Ucrania.
-      Escala tu equipo sin riesgos, con talento validado, entregas claras y precios competitivos.
+      We connect you with vetted developers, testers, and DevOps experts from Poland, Romania, and Ukraine.
+      Scale your team with no hiring risk — clear deliverables, verified talent, and competitive pricing.
     </p>
 
-    <h2>🚀 Nuestros servicios</h2>
+    <h2><i class="fas fa-rocket"></i> Our Services</h2>
     <table class="service-table">
       <thead>
         <tr>
-          <th>Servicio</th>
-          <th>Desde (€/mes)</th>
+          <th>Service</th>
+          <th>Starting at (€/month)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Developer dedicado (mid)</td>
+          <td>Dedicated Developer (Mid-Level)</td>
           <td>€4,000</td>
         </tr>
         <tr>
-          <td>QA Tester (por sprint)</td>
+          <td>QA Tester (per sprint)</td>
           <td>€1,200</td>
         </tr>
         <tr>
-          <td>Soporte técnico SaaS</td>
+          <td>SaaS Technical Support</td>
           <td>€3,000</td>
         </tr>
         <tr>
-          <td>Equipo ágil (3 personas)</td>
-          <td>€12,000 / mes</td>
+          <td>Agile Team (3 people)</td>
+          <td>€12,000 / month</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>🔧 Tecnologías</h2>
+    <h2><i class="fas fa-tools"></i> Tech Stack</h2>
     <p>React • Node.js • Flutter • Python • PostgreSQL • Docker • AWS • Selenium • Figma</p>
 
-    <h2>🌍 Por qué Europa del Este</h2>
+    <h2><i class="fas fa-globe-europe"></i> Why Eastern Europe?</h2>
     <ul>
-      <li>Talento técnico de alto nivel</li>
-      <li>Costos 30–50% más bajos que Alemania o UK</li>
-      <li>Cultura laboral compatible</li>
-      <li>Inglés fluido</li>
+      <li>Top-tier engineering talent</li>
+      <li>30–50% lower cost than Germany or the UK</li>
+      <li>Work culture alignment with Western Europe</li>
+      <li>Fluent English communication</li>
     </ul>
 
-    <h2>🎯 A quién ayudamos</h2>
-    <p>Nos especializamos en apoyar a empresas que necesitan escalar sin complicaciones técnicas o de contratación. Ideal si:</p>
+    <h2><i class="fas fa-bullseye"></i> Who We Help</h2>
+    <p>We specialize in supporting companies that need to scale quickly without the burden of internal hiring. Ideal if:</p>
     <ul>
-      <li>Trabajas en una startup que acaba de levantar inversión (pre-seed a Serie A)</li>
-      <li>Eres CTO y quieres lanzar un MVP sin construir un equipo desde cero</li>
-      <li>Diriges una agencia de producto o marketing sin equipo de desarrollo interno</li>
-      <li>Tienes un SaaS con tickets acumulados o falta de QA y soporte técnico</li>
+      <li>You’re a startup that just raised funding (pre-seed to Series A)</li>
+      <li>You’re a CTO building an MVP and don’t want to assemble a full team yet</li>
+      <li>You run a product or marketing agency with no in-house development</li>
+      <li>You run a SaaS company with QA/support backlog or tech debt</li>
     </ul>
 
-    <h2>🤝 Nuestra experiencia</h2>
-<p>
-  Actualmente estamos trabajando con estas compañías, países y profesionales. Seremos tus socios estratégicos.
-</p>
+    <h2><i class="fas fa-handshake"></i> Our Experience</h2>
+<p>We’re currently partnering with companies across multiple countries and industries. We act as your strategic tech partner — not just a supplier.</p>
 <ul>
-  <li><strong>Industria:</strong> Information Technology, Software, Marketing</li>
-  <li><strong>Ubicación:</strong> UK, Alemania, Países Bajos, países nórdicos</li>
-  <li><strong>Profesionales:</strong> CTO, Head of Product, Engineering Manager</li>
+  <li><strong>Industry:</strong> Information Technology, Software, Marketing</li>
+  <li><strong>Location:</strong> United Kingdom, Germany, Netherlands, Nordics</li>
+  <li><strong>Professionals:</strong> CTOs, Heads of Product, Engineering Managers</li>
 </ul>
 
     </ul>
+
+    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <div class="cta">
-    <h3>📞 ¿Quieres una demo sin compromiso?</h3>
-    <p>Agenda una llamada:</p>
-    <a href="https://calendly.com/tu-nombre">Calendly</a>
-    <p>O escríbenos a: eastcodetalent@gmail.com</p>
+    <h3><i class="fas fa-phone"></i> Want a free, no-obligation demo?</h3>
+    <p>Book a call:</p>
+    <a href="https://calendly.com/your-name">Calendly</a>
+    <p>Or email us at: yourname@domain.com</p>
   </div>
 </body>
 </html>
+
+
 
 
